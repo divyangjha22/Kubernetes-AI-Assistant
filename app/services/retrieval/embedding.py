@@ -37,13 +37,9 @@ def _init():
     if _active_model is not None:
         return
 
-    gemini = _probe_gemini()
-    if gemini:
-        _active_model = gemini
-        _model_type = "gemini"
-    else:
-        _active_model = _load_fallback()
-        _model_type = "fallback"
+    _active_model = _load_fallback()
+    _model_type = "fallback"
+
 
 # Public helpers
 def get_embedding_dim() -> int:
