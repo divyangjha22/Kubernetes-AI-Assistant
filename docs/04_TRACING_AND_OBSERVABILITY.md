@@ -1,6 +1,6 @@
 # 🕵️ Tracing & Observability
 
-In an Agentic system, "Why did the AI say that?" is the most important question. We use a dual-tracing strategy to provide total transparency into the agent's thought process.
+In this Agentic system, I used a dual-tracing strategy to provide total transparency into the agent's thought process.
 
 ---
 

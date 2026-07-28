@@ -35,8 +35,8 @@ All document parsing runs entirely on-device — no external OCR service or clou
 *   **Logic**: The system uses a semantic-ish, paragraph-aware splitter. It attempts to keep paragraphs together to maintain context, ensuring that no chunk is cut off mid-sentence whenever possible. This prevents the LLM from getting "hallucinated" fragments.
 
 ### 3. Vectorization & Storage
-*   **Embedding Model**: `gemini-embedding-2-preview` (Google Gemini). A state-of-the-art embedding model specifically tuned for retrieval tasks.
-*   **Vector Dimensions**: `3072` dimensions.
+*   **Embedding Model**: `all-mpnet-base-v2` (Sentence Transformer). Used for retrieval tasks.
+*   **Vector Dimensions**: `768` dimensions.
 *   **Vector Database**: **Qdrant**. We use a Cloud-hosted Qdrant instance for low-latency retrieval.
 *   **Distance Metric**: **Cosine Similarity** (`models.Distance.COSINE`) is used to measure how closely a user query matches our document chunks.
 
@@ -44,8 +44,3 @@ All document parsing runs entirely on-device — no external OCR service or clou
 
 ## 🌍 Universal Ingestion Command
 The engine is "Universal," meaning it automatically detects folder structures and maps them to metadata (e.g., "True" vs "Noisy" data).
-
-```powershell
-# Command to run the full ingestion
-python -m app.ingestion.processor DATA --wipe
-```

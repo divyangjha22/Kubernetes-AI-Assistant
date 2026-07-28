@@ -39,14 +39,7 @@ sequenceDiagram
 ## 📂 Project Organization
 *   **`app/`**: The core Python package containing the Agent, Pipelines, and Services.
 *   **`ui/`**: A premium Streamlit interface designed for source transparency.
-*   **`DATA/`**: The ground-truth documentation used for ingestion.
-*   **`DOCS/`**: This documentation suite.
-*   **`commands.md`**: The master execution guide for developers.
-
+*   **`data/`**: The ground-truth documentation used for ingestion.
+*   **`docs/`**: This documentation suite.
+*   **`processed_data/`**: THe chunked data which is going to be stored in Vector DB
 ---
-
-## 🚀 Quick Navigation
-1.  **Ingestion**: [02_INGESTION_ENGINE.md](02_INGESTION_ENGINE.md)
-2.  **Intelligence**: [03_NODE_INTELLIGENCE.md](03_NODE_INTELLIGENCE.md)
-3.  **Observability**: [04_TRACING_AND_OBSERVABILITY.md](04_TRACING_AND_OBSERVABILITY.md)
-4.  **Environment Variables**: [05_ENVIRONMENT_VARIABLES.md](05_ENVIRONMENT_VARIABLES.md)

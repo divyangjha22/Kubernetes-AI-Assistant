@@ -55,7 +55,3 @@ tenvv
 
 # Logs
 *.log
-
-# Data files
-data
-processed_data
