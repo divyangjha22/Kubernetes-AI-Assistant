@@ -54,4 +54,5 @@ langfuse                    # Live production monitoring, tracing & user feedbac
 sentence-transformers       # Used by FlashRank reranker internally
 langchain_google_genai
 
-langchain-google-vertexai
+# VISION
+torchvision # PyTorch vision library for image processing
